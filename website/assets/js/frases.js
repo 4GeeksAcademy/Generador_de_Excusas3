@@ -1,4 +1,4 @@
-function frase() {
+function generar_frase() {
     let cadena = "";
     let who = ['The dog', 'My grandma', 'His turtle', 'My bird'];
     let action = ['ate', 'peed', 'crushed', 'broke'];
@@ -14,6 +14,10 @@ function frase() {
         cadena = cadena + " " + array[x][random_index];
     }
 
-    console.log(cadena);
-    document.getElementById("excuse").innerHTML = cadena;
+    return cadena;
+
+}
+
+function imprimir_frase() {
+    document.getElementById("excuse").innerHTML = generar_frase();
 }
