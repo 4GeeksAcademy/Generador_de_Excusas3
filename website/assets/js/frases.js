@@ -1,3 +1,7 @@
+
+window.onload = function(){
+    imprimir_frase();
+}
 function generar_frase() {
     let cadena = "";
     let who = ['The dog', 'My grandma', 'His turtle', 'My bird'];
